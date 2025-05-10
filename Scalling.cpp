@@ -5,6 +5,8 @@ using namespace std;
 int main() {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "");
+    setbkcolor(WHITE);
+    cleardevice();
 
     // Original rectangle
     int x1 = 100, y1 = 100, x2 = 200, y2 = 200;
@@ -14,7 +16,7 @@ int main() {
     cin >> sx >> sy;
 
     // Original shape
-    setcolor(WHITE);
+    setcolor(BLACK);
     rectangle(x1, y1, x2, y2);
     outtextxy(x1, y1 - 10, "Original graph");
 
